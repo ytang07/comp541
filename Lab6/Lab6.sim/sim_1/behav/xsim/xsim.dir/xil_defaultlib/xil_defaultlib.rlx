@@ -1,0 +1,7 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Lab6/Lab6.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+E:/Lab6/Lab6.srcs/sim_1/new/tester_debouncer.sv,1519350813,systemVerilog,,,,tester_debounce,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab6/Lab6.srcs/sources_1/new/debouncer.sv,1519356675,systemVerilog,,E:/Lab6/Lab6.srcs/sim_1/new/tester_debouncer.sv,,debouncer,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,

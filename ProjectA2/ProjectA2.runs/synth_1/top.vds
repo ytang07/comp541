@@ -1,0 +1,1193 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Apr 29 18:35:39 2018
+# Process ID: 36264
+# Current directory: E:/ProjectA2/ProjectA2.runs/synth_1
+# Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+# Log file: E:/ProjectA2/ProjectA2.runs/synth_1/top.vds
+# Journal file: E:/ProjectA2/ProjectA2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: synth_design -top top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20572 
+WARNING: [Synth 8-2611] redeclaration of ansi port clkin is not allowed [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:13]
+WARNING: [Synth 8-976] clkin has already been declared [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:13]
+WARNING: [Synth 8-2654] second declaration of clkin ignored [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:13]
+INFO: [Synth 8-994] clkin is declared here [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:11]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 345.883 ; gain = 112.738
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/top.sv:4]
+	Parameter imem_init bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_imem.mem - type: string 
+	Parameter dmem_init bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_dmem.mem - type: string 
+	Parameter smem_init bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/new/Checkers_smem.mem - type: string 
+	Parameter bmem_init bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_bmem.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'clockdivider_Nexys4' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:11]
+	Parameter N bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'MMCME2_BASE' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25877]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: float 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE_F bound to: 10.000000 - type: float 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 20 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 40 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 80 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: float 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_BASE' (1#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:25877]
+WARNING: [Synth 8-350] instance 'mmcm' of module 'MMCME2_BASE' requires 18 connections, but only 10 given [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:17]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (2#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-638] synthesizing module 'INV' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22577]
+INFO: [Synth 8-256] done synthesizing module 'INV' (3#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22577]
+INFO: [Synth 8-638] synthesizing module 'BUFGMUX' [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:696]
+	Parameter CLK_SEL_TYPE bound to: ASYNC - type: string 
+INFO: [Synth 8-256] done synthesizing module 'BUFGMUX' (4#1) [C:/Xilinx/Vivado/2017.4/scripts/rt/data/unisim_comp.v:696]
+INFO: [Synth 8-256] done synthesizing module 'clockdivider_Nexys4' (5#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/clockdivider_Nexys4.sv:11]
+INFO: [Synth 8-638] synthesizing module 'mips' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/mips.sv:11]
+INFO: [Synth 8-638] synthesizing module 'controller' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/controller.sv:49]
+INFO: [Synth 8-256] done synthesizing module 'controller' (6#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/controller.sv:49]
+INFO: [Synth 8-638] synthesizing module 'datapath' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/datapath.sv:5]
+	Parameter Nloc bound to: 256 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'programcounter' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/programcounter.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'programcounter' (7#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/programcounter.sv:5]
+INFO: [Synth 8-638] synthesizing module 'register_file' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/register_file.sv:11]
+	Parameter Nloc bound to: 32 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter initfile bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/new/rfmem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'E:/ProjectA2/ProjectA2.srcs/sources_1/imports/new/rfmem.mem' is read successfully [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/register_file.sv:25]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (8#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/register_file.sv:11]
+WARNING: [Synth 8-689] width (8) of port connection 'WriteAddr' does not match port width (5) of module 'register_file' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/datapath.sv:73]
+INFO: [Synth 8-638] synthesizing module 'ALU' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/ALU.sv:5]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'addsub' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/addsub.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'adder' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/adder.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fulladder' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/fulladder.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'fulladder' (9#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/new/fulladder.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'adder' (10#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/adder.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'addsub' (11#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/addsub.sv:23]
+INFO: [Synth 8-638] synthesizing module 'comparator' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/comparator.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'comparator' (12#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/comparator.sv:23]
+INFO: [Synth 8-638] synthesizing module 'shifter' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/shifter.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'shifter' (13#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/shifter.sv:23]
+INFO: [Synth 8-638] synthesizing module 'logical' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/logical.sv:23]
+	Parameter N bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'logical' (14#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/logical.sv:23]
+INFO: [Synth 8-256] done synthesizing module 'ALU' (15#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/ALU.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'datapath' (16#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/sources_1/new/datapath.sv:5]
+WARNING: [Synth 8-689] width (32) of port connection 'mem_addr' does not match port width (256) of module 'datapath' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/mips.sv:36]
+INFO: [Synth 8-256] done synthesizing module 'mips' (17#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/mips.sv:11]
+INFO: [Synth 8-638] synthesizing module 'imem' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/imem.sv:5]
+	Parameter Nloc bound to: 512 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter initfile bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_imem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_imem.mem' is read successfully [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/imem.sv:16]
+INFO: [Synth 8-256] done synthesizing module 'imem' (18#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/imem.sv:5]
+WARNING: [Synth 8-689] width (32) of port connection 'pc' does not match port width (512) of module 'imem' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/top.sv:67]
+INFO: [Synth 8-638] synthesizing module 'memIO' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/memIO.sv:5]
+	Parameter Nloc bound to: 16 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter dmem_init bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_dmem.mem - type: string 
+	Parameter smem_init bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/new/Checkers_smem.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'dmem' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/dmem.sv:4]
+	Parameter Nloc bound to: 16 - type: integer 
+	Parameter Dbits bound to: 32 - type: integer 
+	Parameter initfile bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_dmem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_dmem.mem' is read successfully [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/dmem.sv:17]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (19#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/dmem.sv:4]
+WARNING: [Synth 8-689] width (32) of port connection 'mem_addr' does not match port width (16) of module 'dmem' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/memIO.sv:37]
+INFO: [Synth 8-638] synthesizing module 'screenmem' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/new/screenmem.sv:5]
+	Parameter Nloc bound to: 1200 - type: integer 
+	Parameter Dbits bound to: 4 - type: integer 
+	Parameter initfile bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/new/Checkers_smem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'E:/ProjectA2/ProjectA2.srcs/sources_1/new/Checkers_smem.mem' is read successfully [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/new/screenmem.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'screenmem' (20#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/new/screenmem.sv:5]
+WARNING: [Synth 8-689] width (32) of port connection 'wd' does not match port width (4) of module 'screenmem' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/memIO.sv:43]
+INFO: [Synth 8-638] synthesizing module 'LED_reg' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/LED_reg.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'LED_reg' (21#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/LED_reg.sv:5]
+WARNING: [Synth 8-689] width (32) of port connection 'lights_val' does not match port width (16) of module 'LED_reg' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/memIO.sv:49]
+INFO: [Synth 8-638] synthesizing module 'sound_reg' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/sound_reg.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'sound_reg' (22#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/sound_reg.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'memIO' (23#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/new/memIO.sv:5]
+INFO: [Synth 8-638] synthesizing module 'vgadisplaydriver' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/new/vgadisplaydriver.sv:6]
+	Parameter sNloc bound to: 1200 - type: integer 
+	Parameter sDbits bound to: 12 - type: integer 
+	Parameter bNloc bound to: 3584 - type: integer 
+	Parameter bDbits bound to: 12 - type: integer 
+	Parameter bmem_init bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_bmem.mem - type: string 
+INFO: [Synth 8-638] synthesizing module 'vgatimer' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/new/vgatimer.sv:6]
+INFO: [Synth 8-638] synthesizing module 'xycounter' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/imports/new/xycounter.sv:4]
+	Parameter width bound to: 800 - type: integer 
+	Parameter height bound to: 525 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xycounter' (24#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/imports/new/xycounter.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'vgatimer' (25#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/new/vgatimer.sv:6]
+INFO: [Synth 8-638] synthesizing module 'bitmapmem' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/new/bitmapmem.sv:5]
+	Parameter Nloc bound to: 3584 - type: integer 
+	Parameter Dbits bound to: 12 - type: integer 
+	Parameter initfile bound to: E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_bmem.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'E:/ProjectA2/ProjectA2.srcs/sources_1/imports/541ASM/Checkers_bmem.mem' is read successfully [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/new/bitmapmem.sv:16]
+INFO: [Synth 8-256] done synthesizing module 'bitmapmem' (26#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/new/bitmapmem.sv:5]
+INFO: [Synth 8-256] done synthesizing module 'vgadisplaydriver' (27#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/new/vgadisplaydriver.sv:6]
+WARNING: [Synth 8-689] width (4) of port connection 'charcode' does not match port width (12) of module 'vgadisplaydriver' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/top.sv:79]
+INFO: [Synth 8-638] synthesizing module 'accelerometer' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/accelerometer.sv:13]
+INFO: [Synth 8-638] synthesizing module 'AccelerometerCtl' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelerometerCtl.vhd:69]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-3491] module 'ADXL362Ctrl' declared at 'E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:89' bound to instance 'ADXL_Control' of component 'ADXL362Ctrl' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelerometerCtl.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ADXL362Ctrl' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+	Parameter NUM_READS_AVG bound to: 16 - type: integer 
+	Parameter UPDATE_FREQUENCY_HZ bound to: 100 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:283]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:312]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:365]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-3491] module 'SPI_If' declared at 'E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/SPI_If.vhd:42' bound to instance 'SPI_Interface' of component 'SPI_If' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:373]
+INFO: [Synth 8-638] synthesizing module 'SPI_If' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/SPI_If.vhd:66]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter SCLK_FREQUENCY_HZ bound to: 1000000 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "USER" *) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/SPI_If.vhd:113]
+INFO: [Synth 8-256] done synthesizing module 'SPI_If' (28#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/SPI_If.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'ADXL362Ctrl' (29#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:117]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+INFO: [Synth 8-3491] module 'AccelArithmetics' declared at 'E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelArithmetics.vhd:49' bound to instance 'Accel_Calculation' of component 'AccelArithmetics' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelerometerCtl.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'AccelArithmetics' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelArithmetics.vhd:73]
+	Parameter SYSCLK_FREQUENCY_HZ bound to: 100000000 - type: integer 
+	Parameter ACC_X_Y_MAX bound to: 10'b0111111111 
+	Parameter ACC_X_Y_MIN bound to: 10'b0000000000 
+WARNING: [Synth 8-6014] Unused sequential element Data_Ready_0_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelArithmetics.vhd:177]
+WARNING: [Synth 8-6014] Unused sequential element Data_Ready_1_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelArithmetics.vhd:178]
+INFO: [Synth 8-256] done synthesizing module 'AccelArithmetics' (30#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelArithmetics.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'AccelerometerCtl' (31#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/AccelerometerCtl.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'accelerometer' (32#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/accelerometer.sv:13]
+INFO: [Synth 8-638] synthesizing module 'display8digit' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/new/display8digit.sv:9]
+INFO: [Synth 8-638] synthesizing module 'hexto7seg' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/new/hexto7seg.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'hexto7seg' (33#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/new/hexto7seg.sv:4]
+INFO: [Synth 8-256] done synthesizing module 'display8digit' (34#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/new/display8digit.sv:9]
+INFO: [Synth 8-638] synthesizing module 'montek_sound_Nexys4' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/montek_sound_Nexys4.sv:21]
+INFO: [Synth 8-256] done synthesizing module 'montek_sound_Nexys4' (35#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/montek_sound_Nexys4.sv:21]
+INFO: [Synth 8-638] synthesizing module 'keyboard' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:17]
+INFO: [Synth 8-256] done synthesizing module 'keyboard' (36#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:17]
+INFO: [Synth 8-256] done synthesizing module 'top' (37#1) [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/top.sv:4]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[11]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[10]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[9]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[8]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[7]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[6]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[5]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[4]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[3]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[2]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[1]
+WARNING: [Synth 8-3331] design AccelArithmetics has unconnected port ACCEL_Z_IN[0]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[11]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[10]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[9]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[8]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[7]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[6]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[5]
+WARNING: [Synth 8-3331] design vgadisplaydriver has unconnected port charcode[4]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[31]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[30]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[29]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[28]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[27]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[26]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[25]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[24]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[23]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[22]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[21]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[20]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[19]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[18]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[17]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[16]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[15]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[14]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[13]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[1]
+WARNING: [Synth 8-3331] design screenmem has unconnected port mem_addr[0]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[15]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[14]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[13]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[12]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[11]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[10]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[9]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[8]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[7]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[6]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[1]
+WARNING: [Synth 8-3331] design dmem has unconnected port mem_addr[0]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[8]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[7]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[6]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[5]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[4]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[3]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[2]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[1]
+WARNING: [Synth 8-3331] design memIO has unconnected port accelY[0]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[511]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[510]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[509]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[508]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[507]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[506]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[505]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[504]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[503]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[502]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[501]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[500]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[499]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[498]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[497]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[496]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[495]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[494]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[493]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[492]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[491]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[490]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[489]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[488]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[487]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[486]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[485]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[484]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[483]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[482]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[481]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[480]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[479]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[478]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[477]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[476]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[475]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[474]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 389.973 ; gain = 156.828
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 389.973 ; gain = 156.828
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/new/reset.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/new/reset.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/new/reset.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/new/vga.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/new/vga.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/new/vga.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/accel.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/accel.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/accel.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/clock.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/clock.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/clock.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/keyboard.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/keyboard.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/keyboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/led.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/led.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/led.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/sound.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/sound.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/new/sound.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/segdisplay.xdc]
+Finished Parsing XDC File [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/segdisplay.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/ProjectA2/ProjectA2.srcs/constrs_1/imports/constrs_1/imports/constrs_1/imports/new/segdisplay.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  INV => LUT1: 1 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 750.145 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 750.145 ; gain = 517.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 750.145 ; gain = 517.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 750.145 ; gain = 517.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element x_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/imports/new/xycounter.sv:14]
+WARNING: [Synth 8-6014] Unused sequential element y_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/imports/new/xycounter.sv:16]
+INFO: [Synth 8-802] inferred FSM for state register 'StC_reg' in module 'SPI_If'
+INFO: [Synth 8-5546] ROM "SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "StN" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element SCLK_2X_DIV_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/SPI_If.vhd:159]
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_SendRec_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Spi_Trans_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-802] inferred FSM for state register 'StC_Adxl_Ctrl_reg' in module 'ADXL362Ctrl'
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_X_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:786]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Y_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:787]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_Z_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:788]
+WARNING: [Synth 8-6014] Unused sequential element ACCEL_TMP_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:789]
+INFO: [Synth 8-5546] ROM "Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cnt_Num_Reads_Done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Addr_Done" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Spi_SendRec" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "StN_Spi_Trans" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "StN_Adxl_Ctrl" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg_Data[0]" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[1]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cmd_Reg[2]" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Cnt_Bytes_Sent" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "RESET_INT" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element c_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/new/display8digit.sv:21]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/montek_sound_Nexys4.sv:31]
+INFO: [Synth 8-5544] ROM "count" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:60]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  stidle |                               00 |                         10100000
+               stprepare |                               01 |                         00001001
+                 stshift |                               10 |                         01011011
+                  stdone |                               11 |                         00001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_reg' using encoding 'sequential' in module 'SPI_If'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+        stspisendrecidle |                              000 |                          0000000
+         stspipreparecmd |                              001 |                          1000001
+         stspisendstartw |                              010 |                          0001011
+        stspiwaitondonew |                              011 |                          0000111
+         stspisendstartr |                              100 |                          0001110
+        stspiwaitondoner |                              101 |                          0100100
+        stspisendrecdone |                              110 |                          0010101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_SendRec_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stspitransidle |                              000 |                       0000000000
+     stspiprepandsendcmd |                              001 |                       1111100001
+       stspiwaitondonesr |                              010 |                       0000110011
+     stspiwaitforssinact |                              011 |                       0000000010
+          stspitransdone |                              100 |                       0000001110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Spi_Trans_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+          stadxlctrlidle |                             0000 |                     100100000000
+      stadxlsendresetcmd |                             0001 |                     011001000001
+     stadxlwaitresetdone |                             0010 |                     010000000011
+    stadxlconf_remaining |                             0011 |                     011001000010
+stadxlwaitsampleratetick |                             0100 |                     000100000110
+       stadxlread_status |                             0101 |                     011001000111
+         stadxlread_data |                             0110 |                     011000000101
+      stadxlformatandsum |                             0111 |                     000010101101
+         stadxlread_done |                             1000 |                     000001011111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'StC_Adxl_Ctrl_reg' using encoding 'sequential' in module 'ADXL362Ctrl'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 750.145 ; gain = 517.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     13 Bit       Adders := 4     
+	   3 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 66    
++---Registers : 
+	               32 Bit    Registers := 3     
+	               20 Bit    Registers := 1     
+	               19 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	               13 Bit    Registers := 2     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 14    
+	                7 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 4     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 17    
+	   5 Input     32 Bit        Muxes := 1     
+	 382 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 1     
+	   8 Input     19 Bit        Muxes := 1     
+	  16 Input     16 Bit        Muxes := 1     
+	   2 Input     13 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   6 Input     10 Bit        Muxes := 1     
+	  11 Input     10 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	  13 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 4     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 30    
+	   4 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module clockdivider_Nexys4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module controller 
+Detailed RTL Component Info : 
++---Muxes : 
+	   6 Input     10 Bit        Muxes := 1     
+	  11 Input     10 Bit        Muxes := 1     
+	  13 Input      5 Bit        Muxes := 1     
+	  10 Input      5 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module programcounter 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module register_file 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module fulladder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
+Module adder 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+Module addsub 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module comparator 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module shifter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module logical 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   5 Input     32 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+Module datapath 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 3     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	 382 Input     32 Bit        Muxes := 1     
+Module LED_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     16 Bit        Muxes := 1     
+Module sound_reg 
+Detailed RTL Component Info : 
++---Registers : 
+	               19 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     19 Bit        Muxes := 1     
+Module memIO 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+Module xycounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module vgatimer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+Module vgadisplaydriver 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     11 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 1     
+Module SPI_If 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
+	                6 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module ADXL362Ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               20 Bit    Registers := 1     
+	               12 Bit    Registers := 4     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 11    
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     20 Bit        Muxes := 1     
+	   9 Input     12 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   7 Input      7 Bit        Muxes := 1     
+	   8 Input      7 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	  12 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	  12 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 21    
+	   7 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   9 Input      1 Bit        Muxes := 1     
+Module AccelArithmetics 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               13 Bit    Registers := 2     
+	               10 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     13 Bit        Muxes := 2     
+	   4 Input     10 Bit        Muxes := 2     
+Module AccelerometerCtl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module display8digit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+Module montek_sound_Nexys4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module keyboard 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "vga/xy/y0" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element vga/xy/x_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/imports/new/xycounter.sv:14]
+WARNING: [Synth 8-6014] Unused sequential element vga/xy/y_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/sources_1/imports/new/xycounter.sv:16]
+INFO: [Synth 8-4471] merging register 'accel/ADXL_Control/Cmd_Reg_Data_Addr_reg[1:0]' into 'accel/ADXL_Control/Cmd_Reg_Data_Addr_reg[1:0]' [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:451]
+WARNING: [Synth 8-6014] Unused sequential element accel/ADXL_Control/ACCEL_Z_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:807]
+WARNING: [Synth 8-6014] Unused sequential element accel/ADXL_Control/ACCEL_Z_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:788]
+WARNING: [Synth 8-6014] Unused sequential element accel/ADXL_Control/Cmd_Reg_Data_Addr_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:451]
+INFO: [Synth 8-5546] ROM "accel/ADXL_Control/SPI_Interface/SCLK_2X_TICK" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "accel/ADXL_Control/Sample_Rate_Tick" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "accel/ADXL_Control/Cnt_SS_Inactive_done" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "accel/RESET_INT" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element accel/ADXL_Control/SPI_Interface/SCLK_2X_DIV_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/SPI_If.vhd:159]
+WARNING: [Synth 8-6014] Unused sequential element accel/ADXL_Control/ACCEL_X_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:786]
+WARNING: [Synth 8-6014] Unused sequential element accel/ADXL_Control/ACCEL_Y_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:787]
+WARNING: [Synth 8-6014] Unused sequential element accel/ADXL_Control/ACCEL_TMP_SUM_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/imports/lol/ADXL362Ctrl.vhd:789]
+INFO: [Synth 8-5544] ROM "p_0_out" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element c_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/imports/new/display8digit.sv:21]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/montek_sound_Nexys4.sv:31]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:35]
+WARNING: [Synth 8-6014] Unused sequential element timeout_reg was removed.  [E:/ProjectA2/ProjectA2.srcs/sources_1/imports/sources_1/imports/sources_1/new/keyboard.sv:60]
+INFO: [Synth 8-3886] merging instance 'accel/accel/ADXL_Control/Cmd_Reg_reg[0][0]' (FDRE) to 'accel/accel/ADXL_Control/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'accel/accel/ADXL_Control/Cmd_Reg_reg[0][3]' (FDRE) to 'accel/accel/ADXL_Control/Cmd_Reg_reg[0][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accel/\accel/ADXL_Control/Cmd_Reg_reg[0][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (accel/\accel/ADXL_Control/Cmd_Reg_reg[1][7] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (memIO/\sound_reg/audEn_reg )
+WARNING: [Synth 8-3332] Sequential element (sound_reg/audEn_reg) is unused and will be removed from module memIO.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/Cmd_Reg_reg[0][5]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/Cmd_Reg_reg[1][7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/Cmd_Reg_reg[2][7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/D_Send_reg[7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[0]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[1]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[2]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[3]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[4]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[5]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[6]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[8]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[9]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[10]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[11]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[12]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[13]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[14]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_SUM_reg[15]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[11]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[10]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[9]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[8]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[6]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[5]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[4]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[3]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[2]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[1]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_TMP_reg[0]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_X_SUM_reg[1]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_X_SUM_reg[0]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_X_CLIP_reg[9]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[0]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[1]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[2]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[3]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[4]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[5]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[6]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[8]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[9]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[10]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[11]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[12]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[13]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[14]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_SUM_reg[15]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[11]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[10]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[9]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[8]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[6]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[5]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[4]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[3]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[2]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[1]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/ADXL_Control/ACCEL_Y_reg[0]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[12]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[11]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[10]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[9]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[8]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[6]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[5]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[4]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[3]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[2]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[1]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_SUM_reg[0]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[9]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[8]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[7]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[6]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[5]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[4]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[3]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[2]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[1]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (accel/Accel_Calculation/ACCEL_Y_CLIP_reg[0]) is unused and will be removed from module accelerometer.
+WARNING: [Synth 8-3332] Sequential element (c_reg[20]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[21]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[22]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[23]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[24]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[25]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[26]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[27]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[28]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[29]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[30]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (c_reg[31]) is unused and will be removed from module display8digit.
+WARNING: [Synth 8-3332] Sequential element (temp_char_reg[31]) is unused and will be removed from module keyboard.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[13]' (FDE) to 'keyboard/temp_char_reg[14]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[9]' (FDE) to 'keyboard/temp_char_reg[8]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[8]' (FDE) to 'keyboard/temp_char_reg[10]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[14]' (FDE) to 'keyboard/temp_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[10]' (FDE) to 'keyboard/temp_char_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\temp_char_reg[11] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[13]' (FDE) to 'keyboard/keyb_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[9]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[8]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[14]' (FDE) to 'keyboard/keyb_char_reg[15]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[10]' (FDE) to 'keyboard/keyb_char_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[11] )
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[21]' (FDE) to 'keyboard/temp_char_reg[22]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[11]' (FDE) to 'keyboard/temp_char_reg[17]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[17]' (FDE) to 'keyboard/temp_char_reg[16]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[16]' (FDE) to 'keyboard/temp_char_reg[18]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[22]' (FDE) to 'keyboard/temp_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/temp_char_reg[18]' (FDE) to 'keyboard/temp_char_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\temp_char_reg[19] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[21]' (FDE) to 'keyboard/keyb_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[17]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[11]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[16]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[22]' (FDE) to 'keyboard/keyb_char_reg[23]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[18]' (FDE) to 'keyboard/keyb_char_reg[19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[19] )
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[29]' (FDE) to 'keyboard/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[25]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[19]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[24]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[30]' (FDE) to 'keyboard/keyb_char_reg[31]'
+INFO: [Synth 8-3886] merging instance 'keyboard/keyb_char_reg[26]' (FDE) to 'keyboard/keyb_char_reg[27]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (keyboard/\keyb_char_reg[27] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 750.145 ; gain = 517.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-----------------+------------+---------------+----------------+
+|Module Name      | RTL Object | Depth x Width | Implemented As | 
++-----------------+------------+---------------+----------------+
+|bitmapmem        | p_0_out    | 4096x12       | LUT            | 
+|vgadisplaydriver | p_0_out    | 4096x12       | LUT            | 
++-----------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------+-----------+----------------------+----------------------------------------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives                                   | 
++------------+--------------+-----------+----------------------+----------------------------------------------+
+|mips        | dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12                                  | 
+|memIO       | smem/mem_reg | Implied   | 2 K x 4              | RAM16X1D x 4  RAM32X1D x 4  RAM128X1D x 36   | 
+|memIO       | dmem/mem_reg | Implied   | 16 x 32              | RAM16X1S x 32                                | 
++------------+--------------+-----------+----------------------+----------------------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:04 . Memory (MB): peak = 783.590 ; gain = 550.445
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 795.484 ; gain = 562.340
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++------------+--------------+-----------+----------------------+----------------------------------------------+
+|Module Name | RTL Object   | Inference | Size (Depth x Width) | Primitives                                   | 
++------------+--------------+-----------+----------------------+----------------------------------------------+
+|mips        | dp/rf/rf_reg | Implied   | 32 x 32              | RAM32M x 12                                  | 
+|memIO       | smem/mem_reg | Implied   | 2 K x 4              | RAM16X1D x 4  RAM32X1D x 4  RAM128X1D x 36   | 
+|memIO       | dmem/mem_reg | Implied   | 16 x 32              | RAM16X1S x 32                                | 
++------------+--------------+-----------+----------------------+----------------------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:04 ; elapsed = 00:01:05 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                                    | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|top         | accel/accel/ADXL_Control/Data_Reg_reg[6][7] | 6      | 2     | NO           | NO                 | YES               | 2      | 0       | 
+|top         | accel/accel/ADXL_Control/Data_Reg_reg[6][6] | 7      | 6     | NO           | NO                 | YES               | 6      | 0       | 
++------------+---------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     1|
+|2     |BUFGMUX     |     4|
+|3     |CARRY4      |    65|
+|4     |INV         |     1|
+|5     |LUT1        |    50|
+|6     |LUT2        |   110|
+|7     |LUT3        |   202|
+|8     |LUT4        |   271|
+|9     |LUT5        |   252|
+|10    |LUT6        |   801|
+|11    |MMCME2_BASE |     1|
+|12    |MUXF7       |    17|
+|13    |RAM128X1D   |    36|
+|14    |RAM16X1D    |     4|
+|15    |RAM16X1S    |    32|
+|16    |RAM32M      |    12|
+|17    |RAM32X1D    |     4|
+|18    |SRL16E      |     8|
+|19    |FDCE        |    31|
+|20    |FDPE        |     1|
+|21    |FDRE        |   363|
+|22    |FDSE        |     4|
+|23    |IBUF        |     5|
+|24    |OBUF        |    51|
++------+------------+------+
+
+Report Instance Areas: 
++------+------------------------+--------------------+------+
+|      |Instance                |Module              |Cells |
++------+------------------------+--------------------+------+
+|1     |top                     |                    |  2326|
+|2     |  accel                 |accelerometer       |   436|
+|3     |    accel               |AccelerometerCtl    |   436|
+|4     |      ADXL_Control      |ADXL362Ctrl         |   363|
+|5     |        SPI_Interface   |SPI_If              |    78|
+|6     |      Accel_Calculation |AccelArithmetics    |    49|
+|7     |  clockdv               |clockdivider_Nexys4 |    14|
+|8     |  disp                  |display8digit       |    34|
+|9     |  display               |vgadisplaydriver    |    80|
+|10    |    vga                 |vgatimer            |    74|
+|11    |      xy                |xycounter           |    70|
+|12    |  keyboard              |keyboard            |   101|
+|13    |  memIO                 |memIO               |   190|
+|14    |    dmem                |dmem                |    36|
+|15    |    led                 |LED_reg             |    16|
+|16    |    smem                |screenmem           |    75|
+|17    |    sound_reg           |sound_reg           |    63|
+|18    |  mips                  |mips                |  1330|
+|19    |    dp                  |datapath            |  1330|
+|20    |      pcm               |programcounter      |  1302|
+|21    |      rf                |register_file       |    12|
+|22    |  sound                 |montek_sound_Nexys4 |    85|
++------+------------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 859.969 ; gain = 626.824
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 673 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:00 . Memory (MB): peak = 859.969 ; gain = 266.652
+Synthesis Optimization Complete : Time (s): cpu = 00:01:06 ; elapsed = 00:01:07 . Memory (MB): peak = 859.969 ; gain = 626.824
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 181 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 94 instances were transformed.
+  BUFGMUX => BUFGCTRL (inverted pins: CE0): 4 instances
+  INV => LUT1: 1 instances
+  MMCME2_BASE => MMCME2_ADV: 1 instances
+  RAM128X1D => RAM128X1D (RAMD64E, RAMD64E, MUXF7, MUXF7, RAMD64E, RAMD64E): 36 instances
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+  RAM16X1S => RAM32X1S (RAMS32): 32 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+195 Infos, 237 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:07 ; elapsed = 00:01:11 . Memory (MB): peak = 859.969 ; gain = 633.426
+INFO: [Common 17-1381] The checkpoint 'E:/ProjectA2/ProjectA2.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.053 . Memory (MB): peak = 859.969 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 29 18:36:53 2018...

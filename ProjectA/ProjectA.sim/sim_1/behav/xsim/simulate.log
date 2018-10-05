@@ -1,0 +1,22 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+WARNING: File E:/Vivado/Projects/ProjectA/ProjectA.srcs/sources_1/new/imem_screentest_nopause.mem referenced on E:/ProjectA/ProjectA.srcs/sources_1/imports/sources_1/imports/sources_1/new/imem.sv at line 16 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+WARNING: Too many words specified in data file E:/ProjectA/ProjectA.srcs/sources_1/new/dmem_full-IO-test.mem
+#00 {pc, instr, mem_addr, mem_wr, mem_readdata, mem_writedata, werf, alufn, Z, ReadData1, ReadData2, alu_result, reg_writeaddr, reg_writedata, signImm, aluA, aluB, pcsel, wasel, sext, bsel, wdsel, wr, asel} <= {32'h00400000, 32'hxxxxxxxx, 32'hxxxxxxxx, 1'b0, 32'hxxxxxxxx, 32'hxxxxxxxx, 1'b0, 5'bxxxxx, 1'bx, 32'hxxxxxxxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 5'hxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 2'bxx, 2'bxx, 1'bx, 1'bx, 2'bxx, 1'b0, 2'bxx};
+#00 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h000, 10'h000, 12'h000, 12'hf00};
+#01 {pc, instr, mem_addr, mem_wr, mem_readdata, mem_writedata, werf, alufn, Z, ReadData1, ReadData2, alu_result, reg_writeaddr, reg_writedata, signImm, aluA, aluB, pcsel, wasel, sext, bsel, wdsel, wr, asel} <= {32'hxxxxxxxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 1'b0, 32'hxxxxxxxx, 32'hxxxxxxxx, 1'b0, 5'bxxxxx, 1'bx, 32'hxxxxxxxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 5'hxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 32'hxxxxxxxx, 2'bxx, 2'bxx, 1'bx, 1'bx, 2'bxx, 1'b0, 2'bxx};
+Warning: [Unisim MMCME2_ADV-20] Input CLKIN1 period and attribute CLKIN1_PERIOD are not same. Instance project_screentest.uut.clockdv.mmcm.mmcm_adv_1 
+#151 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h001, 10'h000, 12'h001, 12'hf00};
+#155 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h002, 10'h000, 12'h002, 12'hf00};
+#159 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h003, 10'h000, 12'h003, 12'hf00};
+#163 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h004, 10'h000, 12'h004, 12'hf00};
+#167 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h005, 10'h000, 12'h005, 12'hf00};
+#171 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h006, 10'h000, 12'h006, 12'hf00};
+#175 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h007, 10'h000, 12'h007, 12'hf00};
+#179 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h008, 10'h000, 12'h008, 12'hf00};
+#183 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h009, 10'h000, 12'h009, 12'hf00};
+#187 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h00a, 10'h000, 12'h00a, 12'hf00};
+#191 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h00b, 10'h000, 12'h00b, 12'hf00};
+#195 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h00c, 10'h000, 12'h00c, 12'hf00};
+#199 {smem_addr, charcode, dmem_wr, smem_wr, hsync, vsync, red, green, blue, x, y, bmem_addr, bmem_color} <= {11'h000, 4'h0, 1'b0, 1'b0, 1'b1, 1'b1, 4'hf, 4'h0, 4'h0, 10'h00d, 10'h000, 12'h00d, 12'hf00};
+$finish called at time : 200 ns : File "E:/ProjectA/ProjectA.srcs/sim_1/imports/new/project_screentest.sv" Line 113

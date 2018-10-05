@@ -1,0 +1,37 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  --include "../../../../Project1.srcs/sources_1/imports/new" --include "C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include" \
+"../../../../Project1.srcs/sources_1/imports/new/ALU.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/LED_reg.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/accelerometer.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/adder.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/addsub.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/bitmapmem.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/clockdivider_Nexys4.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/comparator.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/controller.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/datapath.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/display8digit.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/dmem.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/fulladder.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/hexto7seg.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/imem.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/keyboard.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/logical.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/memIO.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/mips.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/montek_sound_Nexys4.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/programcounter.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/register_file.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/screenmem.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/shifter.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/sound_reg.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/vgadisplaydriver.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/vgatimer.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/xycounter.sv" \
+"../../../../Project1.srcs/sources_1/imports/new/top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

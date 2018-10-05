@@ -1,0 +1,4 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+WARNING: File mem_file.mem referenced on E:/Lab7/Lab7.srcs/sources_1/new/register_file.sv at line 27 cannot be opened for reading. Please ensure that this file is available in the current working directory.
+$finish called at time : 19 ns : File "E:/Lab7/Lab7.srcs/sim_1/new/datapath_test.sv" Line 94

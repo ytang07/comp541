@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+E:/Lab4/Lab4.srcs/sim_1/new/displaydriver_10x4_test.sv,1518035452,systemVerilog,,,,displaydriver_10x4_test;selfcheck,,xil_defaultlib,../../../../Lab4.srcs/sources_1/new;C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab4/Lab4.srcs/sources_1/new/display10x4.vh,1517856112,verilog,,,,,,,,,,,,
+E:/Lab4/Lab4.srcs/sources_1/new/vgadisplaydriver.sv,1518035666,systemVerilog,,E:/Lab4/Lab4.srcs/sources_1/new/vgatimer.sv,E:/Lab4/Lab4.srcs/sources_1/new/display10x4.vh,vgadisplaydriver,,xil_defaultlib,../../../../Lab4.srcs/sources_1/new;C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab4/Lab4.srcs/sources_1/new/vgatimer.sv,1518035961,systemVerilog,,E:/Lab4/Lab4.srcs/sim_1/new/vgatimer_10x4_test.sv,E:/Lab4/Lab4.srcs/sources_1/new/display10x4.vh,vgatimer,,xil_defaultlib,../../../../Lab4.srcs/sources_1/new;C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab4/Lab4.srcs/sources_1/new/xycounter.sv,1518038720,systemVerilog,,E:/Lab4/Lab4.srcs/sim_1/new/displaydriver_10x4_test.sv,,xycounter,,xil_defaultlib,../../../../Lab4.srcs/sources_1/new;C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,

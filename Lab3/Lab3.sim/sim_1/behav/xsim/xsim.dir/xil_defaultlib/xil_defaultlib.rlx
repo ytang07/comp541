@@ -1,0 +1,13 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Lab3/Lab3.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+E:/Lab3/Lab3.srcs/sim_1/new/CounterMod4_test.sv,1517253793,systemVerilog,,,,CounterMod4_test,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab3/Lab3.srcs/sim_1/new/CounterMod7Enable_test.sv,1517428318,systemVerilog,,,,CounterMod7Enable_test,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab3/Lab3.srcs/sim_1/new/CounterMod7_test.sv,1517428656,systemVerilog,,,,CounterMod7_test,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab3/Lab3.srcs/sim_1/new/xycounter_test.sv,1517430647,systemVerilog,,,,xycounter_test,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab3/Lab3.srcs/sources_1/new/CounterMod4.sv,1517252589,systemVerilog,,E:/Lab3/Lab3.srcs/sim_1/new/CounterMod4_test.sv,,CounterMod4,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab3/Lab3.srcs/sources_1/new/CounterMod7.sv,1517428445,systemVerilog,,E:/Lab3/Lab3.srcs/sim_1/new/CounterMod7_test.sv,,CounterMod7,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab3/Lab3.srcs/sources_1/new/CounterMod7Enable.sv,1517429256,systemVerilog,,E:/Lab3/Lab3.srcs/sim_1/new/CounterMod7Enable_test.sv,,CounterMod7Enable,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab3/Lab3.srcs/sources_1/new/xycounter.sv,1517430439,systemVerilog,,E:/Lab3/Lab3.srcs/sim_1/new/xycounter_test.sv,,xycounter,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,

@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Lab2a/Lab2a.sim/sim_2/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+E:/Lab2a/Lab2a.srcs/sim_2/new/addsub_test.sv,1516819585,systemVerilog,,,,addsub_test,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/imports/new/fulladder.sv,1516646373,systemVerilog,,E:/Lab2a/Lab2a.srcs/sim_2/new/addsub_test.sv,,fulladder,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/add_sub_8bit.sv,1516820070,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/new/adder4bit.sv,,add_sub_8bit,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/adder4bit.sv,1516648532,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/new/adder8bit.sv,,adder4bit,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/adder8bit.sv,1516649552,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/imports/new/fulladder.sv,,adder8bit,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,

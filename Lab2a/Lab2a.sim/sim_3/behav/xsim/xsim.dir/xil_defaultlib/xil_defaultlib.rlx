@@ -1,0 +1,13 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+E:/Lab2a/Lab2a.sim/sim_3/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,xil_defaultlib,,,,,,
+E:/Lab2a/Lab2a.srcs/sim_3/new/Lab3_Part3_test.sv,1516994601,systemVerilog,,,,Lab3_Part3_test,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sim_3/new/addsub_test0.sv,1516991951,systemVerilog,,,,addsub_test0,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/imports/new/fulladder.sv,1516646373,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/new/logical.sv,,fulladder,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/ALU.sv,1516995070,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/new/adder.sv,,ALU,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/adder.sv,1516991525,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/new/addsub.sv,,adder,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/addsub.sv,1516991676,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/imports/new/fulladder.sv,,addsub,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/logical.sv,1516992920,systemVerilog,,E:/Lab2a/Lab2a.srcs/sources_1/new/shifter.sv,,logical,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
+E:/Lab2a/Lab2a.srcs/sources_1/new/shifter.sv,1516993089,systemVerilog,,E:/Lab2a/Lab2a.srcs/sim_3/new/Lab3_Part3_test.sv,,shifter,,xil_defaultlib,C:/Xilinx/Vivado/2017.4/data/xilinx_vip/include,,,,,
